@@ -1,0 +1,146 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/moyimo"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="-20dp"
+            android:layout_weight="2"
+            android:src="@mipmap/moyimo" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:background="@drawable/edit"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/search"
+                android:layout_width="0dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:src="@mipmap/img_search"
+
+                />
+
+            <TextView
+                android:id="@+id/hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="凯叔讲历史"
+                android:textColor="#AFB0B0" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/img_voice" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/start"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="-22dp"
+            android:layout_weight="2"
+            android:src="@mipmap/ic_equalizer1_red_36dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#DEDEDE" />
+
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/story_smart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/zhen_image"
+                android:layout_width="40dp"
+
+                android:layout_height="40dp"
+
+                android:layout_margin="5dp" />
+        </LinearLayout>
+
+
+        <xal.cn.com.kaishu_story.weight.MyScrollView
+            android:id="@+id/story_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:scrollIndicators="none"
+            android:scrollbarSize="0dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.youth.banner.Banner
+                    android:id="@+id/taletell_banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    app:indicator_drawable_selected="@drawable/selector_banner1"
+                    app:indicator_drawable_unselected="@drawable/selector_banner"
+                    app:indicator_height="3dp"
+                    app:indicator_width="15dp"></com.youth.banner.Banner>
+
+                <GridView
+                    android:id="@+id/gridview"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+
+                    android:numColumns="5"></GridView>
+
+                <xal.cn.com.kaishu_story.weight.MyList
+                    android:id="@+id/tale_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp"></xal.cn.com.kaishu_story.weight.MyList>
+            </LinearLayout>
+
+
+        </xal.cn.com.kaishu_story.weight.MyScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/load_footer"
+                android:layout_width="45dp"
+                android:layout_height="10dp"
+                android:layout_margin="5dp" />
+        </LinearLayout>
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

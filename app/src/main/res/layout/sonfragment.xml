@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_margin="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:paddingLeft="20dp"
+                android:text="亲子"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:layout_weight="1"/>
+            <ImageView
+                android:id="@+id/son_image"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/ic_equalizer1_red_36dp"/>
+
+        </LinearLayout>
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/sonsmart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center"
+
+                android:layout_height="wrap_content"
+                >
+                <ImageView
+                    android:layout_width="30dp"
+                    android:id="@+id/son_zhen_image"
+                    android:layout_height="30dp" />
+            </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.youth.banner.Banner
+                    android:id="@+id/son_banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="208dp"
+                    app:indicator_drawable_selected="@drawable/selector_banner"
+                    app:indicator_drawable_unselected="@drawable/selector_banner1"
+                    app:indicator_height="4dp"
+                    app:indicator_width="20dp">
+                </com.youth.banner.Banner>
+
+                <GridView
+                    android:id="@+id/son_grid"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:numColumns="5">
+                </GridView>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="#E8E8E8"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_margin="10dp"
+                    android:textSize="20dp"
+                    android:textColor="#000"
+                    android:text=" 免费亲子日课"/>
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textColor="#000"
+                    android:drawableLeft="@mipmap/qinzi1_toplay"
+                    android:gravity="center_vertical"
+
+                    android:text="      怎么让孩子养成早睡的习惯？"/>
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textColor="#000"
+                    android:drawableLeft="@mipmap/qinzi1_toplay"
+                    android:gravity="center_vertical"
+
+                    android:text="      当孩子说：妈妈，我要打死你...."/>
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:drawableLeft="@mipmap/qinzi1_topause2"
+                    android:gravity="center_vertical"
+                    android:textColor="#f39e5d"
+                    android:text="      养孩子，有时候就得“骗”着来"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
+                    android:background="#E8E8E8"/>
+
+
+
+                <xal.cn.com.kaishu_story.weight.MyList
+                    android:id="@+id/tale_list1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    ></xal.cn.com.kaishu_story.weight.MyList>
+
+            </LinearLayout>
+
+
+
+        </ScrollView>
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    </LinearLayout>
+</FrameLayout>

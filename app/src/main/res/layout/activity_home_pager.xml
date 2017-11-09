@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="xal.cn.com.kaishu_story.view.HomePagerActivity">
+<FrameLayout
+    android:id="@+id/fram"
+    android:layout_weight="1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+<RadioGroup
+    android:id="@+id/radiogroup"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <RadioButton
+        android:drawableTop="@drawable/story"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:id="@+id/story"
+        android:button="@null"
+        android:checked="true"
+        android:textColor="@drawable/color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="故事"/>
+    <RadioButton
+        android:drawableTop="@drawable/son"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:id="@+id/son"
+        android:button="@null"
+        android:checked="false"
+        android:textColor="@drawable/color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="亲子"/>
+    <RadioButton
+        android:id="@+id/mine"
+        android:button="@null"
+        android:gravity="center"
+        android:textColor="@drawable/color"
+        android:drawableTop="@drawable/mine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="我的"/>
+</RadioGroup>
+</LinearLayout>

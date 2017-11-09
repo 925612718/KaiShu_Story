@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="xal.cn.com.kaishu_story.weight.NewsStoryActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp">
+    <ImageView
+        android:id="@+id/news_image_back"
+        android:src="@mipmap/title_back"
+        android:layout_width="30dp"
+        android:layout_height="40dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="最新故事"/>
+    <ImageView
+        android:id="@+id/news_story_image"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/ic_equalizer1_red_36dp"
+        android:layout_marginRight="5dp"/>
+</LinearLayout>
+    <ListView
+        android:id="@+id/news_story_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>
